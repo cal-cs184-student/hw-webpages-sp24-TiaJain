@@ -53,7 +53,7 @@ This optimization works because if we find that a coordinate is out of bounds, w
     <table style="width=100%">
       <tr>
         <td>
-          <img src="images/task1_writeup.png" align="middle" width="400px"/>
+          <img src="docs/images/task1_writeup.png" align="middle" width="400px"/>
           <figcaption align="middle">svg/test4.png</figcaption>
         </td>
       </tr>
@@ -78,18 +78,18 @@ From there, we need to downsample this higher resolution back to the normal nume
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/task2_1sample.png" align="middle" width="400px"/>
+        <img src="docs/images/task2_1sample.png" align="middle" width="400px"/>
         <figcaption align="middle">1 sample per pixel</figcaption>
       </td>
       <td>
-        <img src="images/task2_4sample.png" align="middle" width="400px"/>
+        <img src="docs/images/task2_4sample.png" align="middle" width="400px"/>
         <figcaption align="middle">4 samples per pixel</figcaption>
       </td>
     </tr>
     <br>
     <tr>
       <td>
-        <img src="images/task2_16sample.png" align="middle" width="400px"/>
+        <img src="docs/images/task2_16sample.png" align="middle" width="400px"/>
         <figcaption align="middle">16 samples per pixel</figcaption>
       </td>
     </tr>
@@ -106,7 +106,7 @@ We made our robot do a jumping jack in mid-air! His arms are outstretched upward
     <table style="width=100%">
       <tr>
         <td>
-          <img src="images/my_robot.png" align="middle" width="400px"/>
+          <img src="docs/images/my_robot.png" align="middle" width="400px"/>
           <figcaption align="middle">my_robot.svg</figcaption>
         </td>
       </tr>
@@ -123,9 +123,9 @@ Instead of the typical (x, y) coordinates, a point in barycentric coordinates is
 The key idea is that any point inside or on a triangle can be represented as a weighted everage of the triangle's verticies. alpha, beta, and gamma and non-negative and add up to 1.
 <br>As an example, a point located exactly at the red vertex would have the red point weighted 1, indicating it's 100% infuenced by the red vertex and not at all by the other 2. On the other hand, a coordinate like x might have the green point weighted more than the other 2.
 <br>Use case: Barycentric coordinates are particularly useful in graphics for shading and texture mapping (as we saw with this homework), where it is important to interpolate values across the surface of a triangle. <br>
-<img src="images/task4_color_triangle.png" width="50%" height="50%"></img>
+<img src="docs/images/task4_color_triangle.png" width="50%" height="50%"></img>
 
-<img src="images/task4_writeup.png" width="50%" height="50%"></img>
+<img src="docs/images/task4_writeup.png" width="50%" height="50%"></img>
 <p>svg/basic/test7.svg</p>
 
 <br><br><br>
@@ -158,22 +158,22 @@ The key idea is that any point inside or on a triangle can be represented as a w
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/nearest_1pixel.png" align="middle" width="400px"/>
+        <img src="docs/images/nearest_1pixel.png" align="middle" width="400px"/>
         <figcaption align="middle">Nearest sampling at 1 sample per pixel</figcaption>
       </td>
       <td>
-        <img src="images/nearest-16pixel.png" align="middle" width="400px"/>
+        <img src="docs/images/nearest-16pixel.png" align="middle" width="400px"/>
         <figcaption align="middle">Nearest sampling at 16 samples per pixel</figcaption>
       </td>
     </tr>
     <br>
     <tr>
       <td>
-        <img src="images/bilinear_1pixel.png" align="middle" width="400px"/>
+        <img src="docs/images/bilinear_1pixel.png" align="middle" width="400px"/>
         <figcaption align="middle">Bilinear sampling at 1 sample per pixel</figcaption>
       </td>
       <td>
-        <img src="images/bilinear-16pixel.png" align="middle" width="400px"/>
+        <img src="docs/images/bilinear-16pixel.png" align="middle" width="400px"/>
         <figcaption align="middle">Bilinear sampling at 16 samples per pixel</figcaption>
       </td>
     </tr>
@@ -230,44 +230,44 @@ The key idea is that any point inside or on a triangle can be represented as a w
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/lzero_pnearest.png" align="middle" width="400px"/>
+        <img src="docs/images/lzero_pnearest.png" align="middle" width="400px"/>
         <figcaption align="middle">L_ZERO, P_NEAREST</figcaption>
       </td>
       <td>
-        <img src="images/lzero_pnearest_zoom.png" align="middle" width="400px"/>
+        <img src="docs/images/lzero_pnearest_zoom.png" align="middle" width="400px"/>
         <figcaption align="middle"></figcaption>
       </td>
     </tr>
     <br>
     <tr>
       <td>
-        <img src="images/lzero_plinear.png" align="middle" width="400px"/>
+        <img src="docs/images/lzero_plinear.png" align="middle" width="400px"/>
         <figcaption align="middle">L_ZERO, P_LINEAR</figcaption>
       </td>
       <td>
-        <img src="images/lzero_plinear_zoom.png" align="middle" width="400px"/>
+        <img src="docs/images/lzero_plinear_zoom.png" align="middle" width="400px"/>
         <figcaption align="middle"></figcaption>
       </td>
     </tr>
     <br>
     <tr>
       <td>
-        <img src="images/lnearest_pnearest.png" align="middle" width="400px"/>
+        <img src="docs/images/lnearest_pnearest.png" align="middle" width="400px"/>
         <figcaption align="middle">L_NEAREST, P_NEAREST</figcaption>
       </td>
       <td>
-        <img src="images/lnearest_pnearest_zoom.png" align="middle" width="400px"/>
+        <img src="docs/images/lnearest_pnearest_zoom.png" align="middle" width="400px"/>
         <figcaption align="middle"></figcaption>
       </td>
     </tr>
     <br>
     <tr>
       <td>
-        <img src="images/lnearest_plinear.png" align="middle" width="400px"/>
+        <img src="docs/images/lnearest_plinear.png" align="middle" width="400px"/>
         <figcaption align="middle">L_NEAREST, P_LINEAR</figcaption>
       </td>
       <td>
-        <img src="images/lnearest_plinear_zoom.png" align="middle" width="400px"/>
+        <img src="docs/images/lnearest_plinear_zoom.png" align="middle" width="400px"/>
         <figcaption align="middle"></figcaption>
       </td>
     </tr>
